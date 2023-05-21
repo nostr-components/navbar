@@ -33,24 +33,6 @@
     </style>
   </head>
   <body>
-    <script src="https://unpkg.com/preact@latest/dist/preact.umd.js"></script>
-    <script src="https://unpkg.com/htm@latest/dist/htm.umd.js"></script>
-
-    <script>
-      const { h, Component, render } = preact
-      const html = htm.bind(h)
-
-      const Navbar = () => {
-        return html`
-          <div class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-          </div>
-        `
-      }
-
-      render(html`<${Navbar} />`, document.body)
-    </script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>
