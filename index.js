@@ -1,4 +1,4 @@
-import { html } from './js/preact'
+import { html } from './js/standalone.module.js'
 
 const Navbar = () => {
   return html`
