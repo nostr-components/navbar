@@ -2,7 +2,8 @@ import { html } from './js/standalone.module.js'
 
 const navbarStyle = {
   overflow: 'hidden',
-  backgroundColor: '#333'
+  backgroundColor: '#333',
+  paddingLeft: '200px' // Added this line
 }
 
 const navbarLinkStyle = {
