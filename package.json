@@ -2,7 +2,7 @@
   "name": "nostr-components-navbar",
   "version": "0.0.7",
   "description": "nostr-components-navbar",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
