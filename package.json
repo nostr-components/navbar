@@ -1,6 +1,6 @@
 {
   "name": "nostr-components-navbar",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "nostr-components-navbar",
   "main": "index.js",
   "scripts": {
