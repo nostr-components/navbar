@@ -56,17 +56,56 @@ Here is a simple example of how to use the Nostr Navbar Component:
     <script>
       const { h, render } = preact;
       const html = htm.bind(h);
+      const links = [
+        { '@id': '#home', label: 'Home' },
+        { '@id': '#about', label: 'About' },
+        // ... other links
+      ]
+  
+      return (
+        <div>
+          <Navbar links={links} />
+          {/* rest of your app */}
+        </div>
+      )
 
       render(html`<${Navbar} />`, document.body);
     </script>
   </body>
 </html>
 ```
+## 🛠️ API & Props
 
-## Contributing
+### `links`
+An array of objects representing the navigational links in the navbar.
 
-Contributions to the Nostr Navbar Component are more than welcome! Feel free to open issues or submit pull requests.
+- Type: `Array<{ '@id': string, label: string }>`
+- Example:
+  ```javascript
+  const links = [
+    { '@id': '#home', label: 'Home' },
+    { '@id': '#about', label: 'About' },
+  ];
+  ```
+  
+### User Authentication
+The component manages user authentication status and provides a Login/Logout button. Upon user login, it fetches and caches the user’s profile, which can then be utilized in your application.
 
-## License
+### User Profile
+The component fetches and caches user profile data upon login, which can be accessed via local storage.
 
-- MIT
+## 💡 Notes
+- Ensure that CORS is properly configured for API requests to external servers.
+- Always test on various screen sizes to ensure UI compatibility.
+- Ensure to handle potential exceptions and API changes in future developments.
+
+## 📝 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome! See our [contributing guide](CONTRIBUTING.md) to get started.
+
+---
+
+Made with 💖 by [Melvin Carvalho](https://melvincarvalho.com#me)
+```
